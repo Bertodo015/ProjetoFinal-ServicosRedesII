@@ -1,6 +1,6 @@
 ## Arquivo de Configuração Principal:
-# sudo nano /etc/samba/smb.conf
-
+### sudo nano /etc/samba/smb.conf
+```bash
 [global]
    workgroup = WORKGROUP
    server string = Servidor TechNet
@@ -50,7 +50,7 @@
    valid users = tecnico
    create mask = 0660
    directory mask = 0770
-
+```
 
 ### Criação dos diretórios
 ```bash

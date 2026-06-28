@@ -1,6 +1,6 @@
 ## Arquivo de Configuração Principal:
-### sudo nano /etc/samba/smb.conf
-```bash
+# sudo nano /etc/samba/smb.conf
+
 [global]
    workgroup = WORKGROUP
    server string = Servidor TechNet
@@ -50,34 +50,34 @@
    valid users = tecnico
    create mask = 0660
    directory mask = 0770
-```
+
 
 ### Criação dos diretórios
 ```bash
-sudo mkdir -p /srv/samba/{publico,vendas,rh,ti}
-sudo chmod 1777 /srv/samba/publico
-sudo chown nobody:nogroup /srv/samba/publico
-sudo chmod 770 /srv/samba/vendas
-sudo chown root:root /srv/samba/vendas
-sudo chmod 770 /srv/samba/rh
-sudo chown root:root /srv/samba/rh
-sudo chmod 770 /srv/samba/ti
-sudo chown root:root /srv/samba/ti
+   sudo mkdir -p /srv/samba/{publico,vendas,rh,ti}
+   sudo chmod 1777 /srv/samba/publico
+   sudo chown nobody:nogroup /srv/samba/publico
+   sudo chmod 770 /srv/samba/vendas
+   sudo chown root:root /srv/samba/vendas
+   sudo chmod 770 /srv/samba/rh
+   sudo chown root:root /srv/samba/rh
+   sudo chmod 770 /srv/samba/ti
+   sudo chown root:root /srv/samba/ti
 ```
 
 ### Criação dos Usuários e senhas
 ```bash
-sudo useradd -m -s /bin/bash vendedor1
-sudo useradd -m -s /bin/bash vendedor2
-sudo useradd -m -s /bin/bash recursos
-sudo useradd -m -s /bin/bash tecnico
-sudo useradd -m -s /bin/bash admin
+   sudo useradd -m -s /bin/bash vendedor1
+   sudo useradd -m -s /bin/bash vendedor2
+   sudo useradd -m -s /bin/bash recursos
+   sudo useradd -m -s /bin/bash tecnico
+   sudo useradd -m -s /bin/bash admin
 
-echo "vendedor1:vendas123" | sudo chpasswd
-echo "vendedor2:vendas123" | sudo chpasswd
-echo "recursos:rh123" | sudo chpasswd
-echo "tecnico:ti123" | sudo chpasswd
-echo "admin:admin123" | sudo chpasswd
+   echo "vendedor1:vendas123" | sudo chpasswd
+   echo "vendedor2:vendas123" | sudo chpasswd
+   echo "recursos:rh123" | sudo chpasswd
+   echo "tecnico:ti123" | sudo chpasswd
+   echo "admin:admin123" | sudo chpasswd
 ```
 
 # Testes realizados na pasta /evidencias/servidor_arquivos/

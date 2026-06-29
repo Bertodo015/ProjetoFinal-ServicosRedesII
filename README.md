@@ -15,3 +15,6 @@ Os principais serviços implementados foram:
 A infraestrutura foi desenvolvida em um ambiente virtualizado utilizando uma máquina Ubuntu Server como servidor e duas máquinas Ubuntu Desktop para simular os computadores dos funcionários da empresa.
 
 O objetivo principal do projeto é demonstrar a configuração, integração e funcionamento de serviços de rede amplamente utilizados em ambientes corporativos, aplicando conceitos de administração de sistemas Linux, gerenciamento de usuários, segurança e controle de acesso.
+
+Link do vídeo do projeto:
+[https://youtu.be/odUcZMwnMkA](https://youtu.be/odUcZMwnMkA)
